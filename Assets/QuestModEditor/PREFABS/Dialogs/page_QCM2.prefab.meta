@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: e20619c0185454c41a9e702503465671
+labels:
+- Dialogue
 timeCreated: 1512767393
 licenseType: Free
 NativeFormatImporter:

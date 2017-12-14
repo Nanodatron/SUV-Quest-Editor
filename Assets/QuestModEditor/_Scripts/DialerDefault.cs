@@ -9,8 +9,11 @@ public class DialerDefault : MonoBehaviour {
 	private GameObject bubble;
 	private GameObject collisions;
 	private GameObject statusInfo;
+	private GameObject statusShop;
+	private GameObject statusTravel;
 	private GameObject statusNewQ;
 	private GameObject statusQup;
+	private GameObject statusQinfo;
 	private GameObject statusEndQ;
 	private GameObject character;
 	private randomAudioPlayer _scriptRandomAudioPlayer;
@@ -22,10 +25,13 @@ public class DialerDefault : MonoBehaviour {
 		header = root.transform.Find("GUI/HEADER").gameObject; // pointe "HEADER"
 		bubble = root.transform.Find("MOBILE_pos/bubble_pos").gameObject;
 		collisions = root.transform.Find("MOBILE_pos/STATUS_trm").gameObject; // pointe "Collisions"
-		statusInfo = root.transform.Find("MOBILE_pos/icons_pos/info_trm").gameObject; // pointe "info_trm"
-		statusNewQ = root.transform.Find("MOBILE_pos/icons_pos/newQ_trm").gameObject; // pointe "newQ_trm"
-		statusQup = root.transform.Find("MOBILE_pos/icons_pos/Qup_trm").gameObject; // pointe "Qup_trm"
-		statusEndQ = root.transform.Find("MOBILE_pos/icons_pos/endQ_trm").gameObject; // pointe "endQ_trm"
+		statusInfo = root.transform.Find("MOBILE_pos/icons_pos/info_trm").gameObject;
+		statusShop = root.transform.Find("MOBILE_pos/icons_pos/shop_trm").gameObject;
+		statusTravel = root.transform.Find("MOBILE_pos/icons_pos/travel_trm").gameObject;
+		statusNewQ = root.transform.Find("MOBILE_pos/icons_pos/Qnew_trm").gameObject;
+		statusQup = root.transform.Find("MOBILE_pos/icons_pos/Qup_trm").gameObject;
+		statusQinfo = root.transform.Find("MOBILE_pos/icons_pos/Qinfo_trm").gameObject;
+		statusEndQ = root.transform.Find("MOBILE_pos/icons_pos/Qend_trm").gameObject;
 		character = root.transform.Find("MOBILE_pos/character_scl/character_sprite").gameObject; // pointe "character_sprite"
 		_scriptRandomAudioPlayer = character.GetComponent<randomAudioPlayer>(); // cherche l'audio de "character"
 		anim = character.GetComponent<Animation>(); // cherche l'animation de "character"
@@ -34,8 +40,11 @@ public class DialerDefault : MonoBehaviour {
 	void OnEnable ()
 	{
 		statusInfo.SetActive(false);
+		statusShop.SetActive(false);
+		statusTravel.SetActive(false);
 		statusNewQ.SetActive(false);
 		statusQup.SetActive(false);
+		statusQinfo.SetActive(false);
 		statusEndQ.SetActive(false);
 	}
 

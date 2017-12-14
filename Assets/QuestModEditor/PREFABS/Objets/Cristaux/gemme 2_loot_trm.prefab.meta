@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 7ca1f89bc5931c449b666ae0d753a60d
+labels:
+- Loot
 timeCreated: 1512784284
 licenseType: Free
 NativeFormatImporter:

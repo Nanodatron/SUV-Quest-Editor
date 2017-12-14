@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 0ee425c0781261241a05e11ef168e047
+labels:
+- Npc
 timeCreated: 1512786449
 licenseType: Free
 NativeFormatImporter:
